@@ -8,7 +8,7 @@ Unlike MiscUtil, Generic.Math does not support Nullable\<T\>
 
 ## Builds
 
-Available on a Nuget Feed: TODO
+Available on a Nuget: https://www.nuget.org/packages/Generic.Math
 
 ##Tests
 

@@ -20,7 +20,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Negate<T>(T value)
 		{
-			return Operator<T>.Negate(value);
+			return GenericMath<T>.Negate(value);
 		}
 
 		/// <summary>
@@ -30,7 +30,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Not<T>(T value)
 		{
-			return Operator<T>.Not(value);
+			return GenericMath<T>.Not(value);
 		}
 
 		/// <summary>
@@ -40,7 +40,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Or<T>(T value1, T value2)
 		{
-			return Operator<T>.Or(value1, value2);
+			return GenericMath<T>.Or(value1, value2);
 		}
 
 		/// <summary>
@@ -50,7 +50,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T And<T>(T value1, T value2)
 		{
-			return Operator<T>.And(value1, value2);
+			return GenericMath<T>.And(value1, value2);
 		}
 
 		/// <summary>
@@ -60,7 +60,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Xor<T>(T value1, T value2)
 		{
-			return Operator<T>.Xor(value1, value2);
+			return GenericMath<T>.Xor(value1, value2);
 		}
 
 		/// <summary>
@@ -70,7 +70,7 @@ namespace Generic.Math
 		/// </summary>
 		public static TTo Convert<TFrom, TTo>(TFrom value)
 		{
-			return Operator<TFrom, TTo>.Convert(value);
+			return GenericMath<TFrom, TTo>.Convert(value);
 		}
 
 		/// <summary>
@@ -80,7 +80,7 @@ namespace Generic.Math
 		/// </summary>        
 		public static T Add<T>(T value1, T value2)
 		{
-			return Operator<T>.Add(value1, value2);
+			return GenericMath<T>.Add(value1, value2);
 		}
 
 		/// <summary>
@@ -90,7 +90,7 @@ namespace Generic.Math
 		/// </summary>
 		public static TArg1 AddAlternative<TArg1, TArg2>(TArg1 value1, TArg2 value2)
 		{
-			return Operator<TArg2, TArg1>.Add(value1, value2);
+			return GenericMath<TArg2, TArg1>.Add(value1, value2);
 		}
 
 		/// <summary>
@@ -100,7 +100,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Subtract<T>(T value1, T value2)
 		{
-			return Operator<T>.Subtract(value1, value2);
+			return GenericMath<T>.Subtract(value1, value2);
 		}
 
 		/// <summary>
@@ -110,7 +110,7 @@ namespace Generic.Math
 		/// </summary>
 		public static TArg1 SubtractAlternative<TArg1, TArg2>(TArg1 value1, TArg2 value2)
 		{
-			return Operator<TArg2, TArg1>.Subtract(value1, value2);
+			return GenericMath<TArg2, TArg1>.Subtract(value1, value2);
 		}
 
 		/// <summary>
@@ -120,7 +120,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Multiply<T>(T value1, T value2)
 		{
-			return Operator<T>.Multiply(value1, value2);
+			return GenericMath<T>.Multiply(value1, value2);
 		}
 
 		/// <summary>
@@ -130,7 +130,7 @@ namespace Generic.Math
 		/// </summary>
 		public static TArg1 MultiplyAlternative<TArg1, TArg2>(TArg1 value1, TArg2 value2)
 		{
-			return Operator<TArg2, TArg1>.Multiply(value1, value2);
+			return GenericMath<TArg2, TArg1>.Multiply(value1, value2);
 		}
 
 		/// <summary>
@@ -140,7 +140,7 @@ namespace Generic.Math
 		/// </summary>
 		public static T Divide<T>(T value1, T value2)
 		{
-			return Operator<T>.Divide(value1, value2);
+			return GenericMath<T>.Divide(value1, value2);
 		}
 
 		/// <summary>
@@ -150,7 +150,7 @@ namespace Generic.Math
 		/// </summary>
 		public static TArg1 DivideAlternative<TArg1, TArg2>(TArg1 value1, TArg2 value2)
 		{
-			return Operator<TArg2, TArg1>.Divide(value1, value2);
+			return GenericMath<TArg2, TArg1>.Divide(value1, value2);
 		}
 
 		/// <summary>
@@ -160,7 +160,7 @@ namespace Generic.Math
 		/// </summary>
 		public static bool Equal<T>(T value1, T value2)
 		{
-			return Operator<T>.Equal(value1, value2);
+			return GenericMath<T>.Equal(value1, value2);
 		}
 
 		/// <summary>
@@ -170,7 +170,7 @@ namespace Generic.Math
 		/// </summary>
 		public static bool NotEqual<T>(T value1, T value2)
 		{
-			return Operator<T>.NotEqual(value1, value2);
+			return GenericMath<T>.NotEqual(value1, value2);
 		}
 
 		/// <summary>
@@ -180,7 +180,7 @@ namespace Generic.Math
 		/// </summary>
 		public static bool GreaterThan<T>(T value1, T value2)
 		{
-			return Operator<T>.GreaterThan(value1, value2);
+			return GenericMath<T>.GreaterThan(value1, value2);
 		}
 
 		/// <summary>
@@ -190,7 +190,7 @@ namespace Generic.Math
 		/// </summary>
 		public static bool LessThan<T>(T value1, T value2)
 		{
-			return Operator<T>.LessThan(value1, value2);
+			return GenericMath<T>.LessThan(value1, value2);
 		}
 
 		/// <summary>
@@ -200,7 +200,7 @@ namespace Generic.Math
 		/// </summary>
 		public static bool GreaterThanOrEqual<T>(T value1, T value2)
 		{
-			return Operator<T>.GreaterThanOrEqual(value1, value2);
+			return GenericMath<T>.GreaterThanOrEqual(value1, value2);
 		}
 
 		/// <summary>
@@ -210,7 +210,7 @@ namespace Generic.Math
 		/// </summary>
 		public static bool LessThanOrEqual<T>(T value1, T value2)
 		{
-			return Operator<T>.LessThanOrEqual(value1, value2);
+			return GenericMath<T>.LessThanOrEqual(value1, value2);
 		}
 
 		/// <summary>
@@ -223,7 +223,7 @@ namespace Generic.Math
 		/// </remarks>
 		public static T DivideInt32<T>(T value, int divisor)
 		{
-			return Operator<int, T>.Divide(value, divisor);
+			return GenericMath<int, T>.Divide(value, divisor);
 		}
 	}
 
@@ -232,9 +232,9 @@ namespace Generic.Math
 	/// different types. For operators, the return type is assumed to match the first
 	/// operand.
 	/// </summary>
-	/// <seealso cref="Operator&lt;T&gt;"/>
-	/// <seealso cref="Operator"/>
-	public static class Operator<TValue, TResult>
+	/// <seealso cref="GenericMath&lt;T&gt;"/>
+	/// <seealso cref="GenericMath"/>
+	public static class GenericMath<TValue, TResult>
 	{
 		private static readonly Lazy<Func<TValue, TResult>> convert;
 
@@ -245,7 +245,7 @@ namespace Generic.Math
 		/// </summary>
 		public static Func<TValue, TResult> Convert => convert.Value;
 
-		static Operator()
+		static GenericMath()
 		{
 			convert = new Lazy<Func<TValue, TResult>>(() => ExpressionUtil.CreateExpression<TValue, TResult>(body => Expression.Convert(body, typeof(TResult))), true);
 			add = new Lazy<Func<TResult, TValue, TResult>>(() => ExpressionUtil.CreateExpression<TResult, TValue, TResult>(Expression.Add, true), true);
@@ -288,9 +288,9 @@ namespace Generic.Math
 	/// <summary>
 	/// Provides standard operators (such as addition) over a single type
 	/// </summary>
-	/// <seealso cref="Operator"/>
-	/// <seealso cref="Operator&lt;TValue,TResult&gt;"/>
-	public static class Operator<T>
+	/// <seealso cref="GenericMath"/>
+	/// <seealso cref="GenericMath&lt;TValue,TResult&gt;"/>
+	public static class GenericMath<T>
 	{
 		/// <summary>
 		/// Returns the zero value for value-types (even full Nullable&lt;TInner&gt;) - or null for reference types
@@ -409,7 +409,7 @@ namespace Generic.Math
 		/// </summary>
 		public static Func<T, T, bool> LessThanOrEqual => lessThanOrEqual.Value;
 
-		static Operator()
+		static GenericMath()
 		{
 			Type typeT = typeof(T);
 			if (typeT.GetTypeInfo().IsValueType && typeT.GetTypeInfo().IsGenericType && (typeT.GetGenericTypeDefinition() == typeof(Nullable<>)))

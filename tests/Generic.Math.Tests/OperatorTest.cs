@@ -132,10 +132,10 @@ namespace Generic.Math.Tests
 		[Test]
 		public void Zero()
 		{
-			Assert.AreEqual(Operator<int>.Zero, (int)0);
-			Assert.AreEqual(Operator<float>.Zero, (float)0);
-			Assert.AreEqual(Operator<decimal>.Zero, (decimal)0);
-			Assert.AreEqual(Operator<string>.Zero, null);
+			Assert.AreEqual(GenericMath<int>.Zero, (int)0);
+			Assert.AreEqual(GenericMath<float>.Zero, (float)0);
+			Assert.AreEqual(GenericMath<decimal>.Zero, (decimal)0);
+			Assert.AreEqual(GenericMath<string>.Zero, null);
 		}
 
 		[Test]

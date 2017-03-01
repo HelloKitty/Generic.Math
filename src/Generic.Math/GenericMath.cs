@@ -7,7 +7,7 @@ namespace Generic.Math
 	//Based on JonSkeet's MiscUtil: http://www.yoda.arachsys.com/csharp/miscutil/licence.txt
 	//From: http://www.yoda.arachsys.com/csharp/miscutil/
 	/// <summary>
-	/// The Operator class provides easy access to the standard operators
+	/// The GenericMath class provides easy access to the standard operators
 	/// (addition, etc) for generic types, using type inference to simplify
 	/// usage.
 	/// </summary>
@@ -417,6 +417,8 @@ namespace Generic.Math
 				throw new InvalidOperationException($"Generic math between {nameof(Nullable)} types is not implemented. Type: {typeof(T).FullName} is nullable.");
 			}
 
+			//Due to exceptions caused by compiled lambdas in later versions of .NET that didn't throw on earlier versions
+			//we use lazy expressions that are compiled just as they are used and not as the type is accessed
 			add = new Lazy<Func<T, T, T>>(() => ExpressionUtil.CreateExpression<T, T, T>(Expression.Add), true);
 			subtract = new Lazy<Func<T, T, T>>(() => ExpressionUtil.CreateExpression<T, T, T>(Expression.Subtract), true);
 			divide = new Lazy<Func<T, T, T>>(() => ExpressionUtil.CreateExpression<T, T, T>(Expression.Divide), true);

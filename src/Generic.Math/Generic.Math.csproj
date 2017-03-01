@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+    <Version>1.0.1</Version>
+    <Authors>https://github.com/HelloKitty</Authors>
+    <PackageId>Generic.Math</PackageId>
+    <Company />
+    <Description>.NETStandard subset fork of Jon Skeet's Miscutil generic Operator. Uses lazy compiled lambdas to avoid exceptions encountered with MiscUtil.</Description>
+    <PackageLicenseUrl>http://www.yoda.arachsys.com/csharp/miscutil/licence.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/HelloKitty/Generic.Math</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HelloKitty/Generic.Math</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Jon Skeet MiscUtil Netstandard Netcore Generic Math</PackageTags>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

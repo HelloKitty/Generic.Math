@@ -412,10 +412,17 @@ namespace Generic.Math
 		static GenericMath()
 		{
 			Type typeT = typeof(T);
+#if !NET40
 			if (typeT.GetTypeInfo().IsValueType && typeT.GetTypeInfo().IsGenericType && (typeT.GetGenericTypeDefinition() == typeof(Nullable<>)))
 			{
 				throw new InvalidOperationException($"Generic math between {nameof(Nullable)} types is not implemented. Type: {typeof(T).FullName} is nullable.");
 			}
+#else
+			if (typeT.IsValueType && typeT.IsGenericType && (typeT.GetGenericTypeDefinition() == typeof(Nullable<>)))
+			{
+				throw new InvalidOperationException($"Generic math between {nameof(Nullable)} types is not implemented. Type: {typeof(T).FullName} is nullable.");
+			}
+#endif
 
 			//Due to exceptions caused by compiled lambdas in later versions of .NET that didn't throw on earlier versions
 			//we use lazy expressions that are compiled just as they are used and not as the type is accessed

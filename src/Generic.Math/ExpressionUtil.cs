@@ -19,8 +19,7 @@ namespace Generic.Math
 		/// <typeparam name="TResult">The return type</typeparam>
 		/// <param name="body">Body factory</param>
 		/// <returns>Compiled function delegate</returns>
-		public static Func<TArg1, TResult> CreateExpression<TArg1, TResult>(
-			Func<Expression, UnaryExpression> body)
+		public static Func<TArg1, TResult> CreateExpression<TArg1, TResult>(Func<Expression, UnaryExpression> body)
 		{
 			ParameterExpression inp = Expression.Parameter(typeof(TArg1), "inp");
 			try

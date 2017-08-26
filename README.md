@@ -1,4 +1,4 @@
-#Generic.Math
+# Generic.Math
 
 Generic.Math is an open-source .NETSTANDARD, .NETCORE, and .NETFRAMEWORK compatible generic mathematics library. It is essentially a subset fork of Jon Skeet's [MiscUtil](http://www.yoda.arachsys.com/csharp/miscutil/) library with lazy-loaded compiled lambda expressions to support the subtle .NETSTANDARD/.NET46 changes to compiled lambdas.
 
@@ -10,7 +10,7 @@ Unlike MiscUtil, Generic.Math does not support Nullable\<T\>
 
 Available on a Nuget: https://www.nuget.org/packages/Generic.Math
 
-##Tests
+## Tests
 
 TODO Setup Mono tests
 
@@ -18,6 +18,6 @@ TODO Setup Mono tests
 
 (Done locally)
 
-##Licensing
+## Licensing
 
-MIT Baby
+MIT

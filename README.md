@@ -8,15 +8,13 @@ Unlike MiscUtil, Generic.Math does not support Nullable\<T\>
 
 ## Builds
 
-Available on a Nuget: https://www.nuget.org/packages/Generic.Math
+**Nuget:** https://www.nuget.org/packages/Generic.Math
+
+**Myget:** [![hellokitty MyGet Build Status](https://www.myget.org/BuildSource/Badge/hellokitty?identifier=9eb47e99-c005-4da5-b03c-902aaf5da813)](https://www.myget.org/)
 
 ## Tests
 
-TODO Setup Mono tests
-
-#### Windows - Unit Tests
-
-(Done locally)
+TODO setup travis and appveyor
 
 ## Licensing
 
